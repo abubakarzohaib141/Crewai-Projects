@@ -1,6 +1,5 @@
 import os
 from random import randint
-from pydantic import BaseModel
 from crewai.flow import Flow, listen, start
 from poem_crew import ShoppingCrew  # Assuming poem_crew.py contains ShoppingCrew definition
 import streamlit as st
@@ -11,7 +10,7 @@ if 'chat_history' not in st.session_state:
 
 user_input = st.chat_input("Enter your shopping query:")
 
-class ShoppingState(BaseModel):
+class ShoppingState():
     answer: str = ""
     history: list = [] # Add history to state
 
