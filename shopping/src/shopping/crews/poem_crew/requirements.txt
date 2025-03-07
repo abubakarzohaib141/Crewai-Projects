@@ -1,4 +1,4 @@
-pydantic
-crewai
-crewai_tools
-sqlite3 >= 3.35.0
+pydantic==2.10.6
+crewai==0.102.0
+crewai_tools==0.0.1
+sqlite3 == 3.35.0
