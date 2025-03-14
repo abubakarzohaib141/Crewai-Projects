@@ -37,7 +37,6 @@ class ShoppingFlow(Flow[ShoppingState]):
         
         print("Shopping Agent : ", result.raw)
         self.state.answer = result.raw
-
     @listen(generate_answer)
     def save_poem(self):
         print("Saving Answer")
